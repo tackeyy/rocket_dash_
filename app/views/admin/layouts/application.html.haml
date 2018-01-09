@@ -11,6 +11,9 @@
     = stylesheet_link_tag    'admin/application', media: 'all'
     = javascript_include_tag 'admin/application'
 
+    %link{ href: 'https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.0/css/AdminLTE.min.css', rel: 'stylesheet', type: 'text/css' }
+    %link{ href: 'https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.0/css/skins/skin-blue.min.css', rel: 'stylesheet', type: 'text/css' }
+
   %body.hold-transition.skin-blue.sidebar-mini
     .wrapper
       = render 'admin/layouts/header'
@@ -35,3 +38,5 @@
         %strong
           Copyright © 2016
         All rights reserved.
+
+  %script{ src: 'https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.0/js/adminlte.min.js', type: 'text/javascript' }

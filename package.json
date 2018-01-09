@@ -1,7 +1,0 @@
-{
-  "name": "rocket_dash",
-  "private": true,
-  "dependencies": {
-    "admin-lte": "^2.4.2"
-  }
-}

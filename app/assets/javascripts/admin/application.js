@@ -14,5 +14,3 @@
 //= require rails-ujs
 //= require_tree .
 //= require bootstrap-sprockets
-//= require admin-lte/dist/js/adminlte.js
-//= require admin-lte/plugins/iCheck/icheck
