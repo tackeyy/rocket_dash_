@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project initiation
 
-Things you may want to cover:
+- Ruby version
 
-* Ruby version
+Check ` .ruby-version ` .
 
-* System dependencies
+If you have not suitable ruby version, run below commands.
 
-* Configuration
+```bash
+# macOS
+$ brew upgrade ruby-build
+$ rbenv install | cat .ruby-version
+```
 
-* Database creation
+- リポジトリのクローン
 
-* Database initialization
+```bash
+$ git git@github.com:kajitz/rocket_dash.git
+```
 
-* How to run the test suite
+- セットアップ
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+$ bin/setup
+```
 
-* Deployment instructions
+- Seedデータ
 
-* ...
+```bash
+$ bundle exec rake db:seed_fu
+```
