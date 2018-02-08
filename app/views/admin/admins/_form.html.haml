@@ -1,0 +1,9 @@
+= simple_form_for([:admin, admin]) do |f|
+  .form-inputs
+    = f.input :name
+    = f.input :email
+    = f.input :password
+    = f.input :password_confirmation
+
+  .form-actions
+  = f.submit '保存', class: 'btn btn-primary'

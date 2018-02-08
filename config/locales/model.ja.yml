@@ -7,9 +7,11 @@ ja:
       admin:
         email: メールアドレス
         password: パスワード
+        password_confirmation: 確認用パスワード
       user:
         email: メールアドレス
         password: パスワード
+        password_confirmation: 確認用パスワード
     errors:
       models:
         user:
@@ -19,6 +21,21 @@ ja:
               too_long: ユーザー名は8文字以内にしてください。
             email:
               taken: 登録済もしくは登録確認が完了していないメールアドレスです。
+              blank: メールアドレスを入力してください。
+              not_found_or_invalid_password: メールアドレスもしくはパスワードが異なります。
+              invalid_email_address: 不正なメールアドレスです。
+            password:
+              blank: パスワードを入力してください。
+              too_short: パスワードは8文字以上にしてください。
+            password_confirmation:
+              blank: 確認用のパスワードを入力してください。
+              confirmation: パスワードと確認用のパスワードが一致しません。
+        admin:
+          attributes:
+            name:
+              blank: ユーザー名を入力してください。
+              too_long: ユーザー名は8文字以内にしてください。
+            email:
               blank: メールアドレスを入力してください。
               not_found_or_invalid_password: メールアドレスもしくはパスワードが異なります。
               invalid_email_address: 不正なメールアドレスです。
