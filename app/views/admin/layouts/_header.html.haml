@@ -1,11 +1,15 @@
 %header.main-header
-  %a.logo{ href: admin_dashboard_path }
+  %a.logo{ href: admin_path }
     %span.logo-mini
-      %b> D
-      LS
+      %b> R
+      DS
     %span.logo-lg
-      %b #{Settings.service.name}
-      Dashboard
-  %nav.navbar.navbar-static-top{:role => "navigation"}
-    %a.sidebar-toggle{"data-toggle" => "push-menu", :href => "#", :role => "button"}
+      %b #{Settings.service.name}管理画面
+  %nav.navbar.navbar-static-top{ role: 'navigation' }
+    %a.sidebar-toggle{ 'data-toggle': 'push-menu', href: '#', role: 'button' }
       %span.sr-only Toggle navigation
+    .navbar-custom-menu
+      %ul.nav.navbar-nav
+        %li.dropdown.user.user-menu
+          %a.dropdown-toggle{ 'data-toggle': 'dropdown', href: '#' }
+            %span.hidden-xs= @current_admin.try(:email)
