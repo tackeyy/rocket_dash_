@@ -1,7 +1,7 @@
 %aside.main-sidebar
   %section.sidebar
     %ul.sidebar-menu{ 'data-widget': 'tree' }
-      %li
-        %a{ href: '/admin/admins' }
+      %li{ class: active_class(admin_admins_path) }
+        %a{ href: admin_admins_path }
           %i.fa.fa-link
-            %span #{Admin.model_name.human}管理
+          %span #{Admin.model_name.human}管理

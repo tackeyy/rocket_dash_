@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   namespace :admin do
     get '/', to: 'dashboard#index'
     resource :sign_in, controller: 'sign_in', only: %i[show create]
+
+    resources :admins
   end
 
   resource :users, only: [] do
