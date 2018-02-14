@@ -4,9 +4,8 @@
 
 - Ruby version
 
-Check ` .ruby-version ` .
-
-If you have not suitable ruby version, run below commands.
+` .ruby-version ` を確認してください。
+もしローカルとバージョンが異なる場合は、以下のコマンドでバージョンを合わせてください。
 
 ```bash
 # macOS
