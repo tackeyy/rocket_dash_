@@ -55,6 +55,9 @@ gem 'simple_form'
 # Fast Haml
 gem 'faml'
 
+# Meta tag for SEO
+gem 'meta-tags'
+
 # Pagenation
 gem 'kaminari'
 
