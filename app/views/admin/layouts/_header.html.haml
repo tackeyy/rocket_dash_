@@ -12,4 +12,4 @@
       %ul.nav.navbar-nav
         %li.dropdown.user.user-menu
           %a.dropdown-toggle{ 'data-toggle': 'dropdown', href: '#' }
-            %span.hidden-xs= @current_admin.try(:email)
+            %span.hidden-xs= current_admin.try(:email)
