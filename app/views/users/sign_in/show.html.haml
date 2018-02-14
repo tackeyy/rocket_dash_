@@ -1,3 +1,7 @@
+:ruby
+  set_meta_tags title: "#{User.model_name.human}ログイン",
+                description: "#{User.model_name.human}ログイン"
+
 %h1 ログイン
 
 = simple_form_for @user, url: users_sign_in_path do |f|

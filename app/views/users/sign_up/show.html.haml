@@ -1,3 +1,7 @@
+:ruby
+  set_meta_tags title: "#{User.model_name.human}登録",
+                description: "#{User.model_name.human}登録ページ"
+
 %h1 #{User.model_name.human}登録
 
 = simple_form_for @user, url: users_sign_up_path do |f|
