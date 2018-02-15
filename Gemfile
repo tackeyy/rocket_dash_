@@ -10,7 +10,7 @@ gem 'rails', '~> 5.2.0.rc'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 
 # Application server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.11'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
