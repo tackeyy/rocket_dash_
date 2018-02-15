@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   root 'home#index'
 
   namespace :admin do
-    get 'dashboard', to: 'dashboard#index'
+    get '/', to: 'dashboard#index'
+    resource :sign_in, controller: 'sign_in', only: %i[show create]
+
+    resources :admins
   end
 
   resource :users, only: [] do

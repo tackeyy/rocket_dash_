@@ -1,0 +1,9 @@
+exclude:
+  - 'vendor/**/*'
+  - 'spec/**/*'
+  - 'lib/templates/**/*'
+  - 'app/views/kaminari/**/*'
+
+linters:
+  LineLength:
+    max: 150
