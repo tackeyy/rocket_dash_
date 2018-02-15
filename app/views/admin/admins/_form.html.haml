@@ -1,8 +1,8 @@
 = simple_form_for([:admin, admin]) do |f|
   .form-inputs
-    = f.input :name
-    = f.input :email
-    = f.input :password
+    = f.input :name, placeholder: "#{Admin.model_name.human}1"
+    = f.input :email, placeholder: 'admin@example.com'
+    = f.input :password, hint: "#{Admin.human_attribute_name(:password)}を変更しない場合は空欄にしてください。"
     = f.input :password_confirmation
 
   .form-actions
