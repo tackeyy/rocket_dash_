@@ -1,0 +1,12 @@
+.box.box-default
+  .box-header.with-border
+    %h4.box-title
+      #{User.model_name.human}情報
+    .box-tools
+      = link_to '一覧', admin_users_path, class: %i[btn btn-default]
+      = link_to '編集', edit_admin_user_path(@user), class: %i[btn btn-primary]
+  .box-body
+    %table.table
+      %tr
+        %th= human(User, :email)
+        %td= @user.email

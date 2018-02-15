@@ -1,0 +1,7 @@
+.box.box-default
+  .box-header.with-border
+    %h4.box-title
+      = User.model_name.human
+      作成
+  .box-body
+    = render 'form', user: @user

@@ -1,0 +1,26 @@
+.box.box-default
+  .box-header.with-border
+    %h4.box-title
+      = User.model_name.human
+      一覧
+    .box-tools
+      = link_to '新規追加', new_admin_user_path, class: 'btn btn-info'
+  .box-body
+    %table.table.table-striped
+      %thead
+        %tr
+          %th= human(User, :email)
+          %th{ style: 'width: 200px;' }
+      %tbody
+        - if @users.present?
+          - @users.each do |user|
+            %tr
+              %td= user.email
+              %td
+                = link_to '詳細', admin_user_path(user), class: %i[btn btn-default]
+                = link_to '編集', edit_admin_user_path(user), class: %i[btn btn-primary]
+                = link_to '削除', admin_user_path(user), method: :delete, data: { confirm: '削除しますか?' }, class: %i[btn btn-danger]
+        - else
+          %tr
+            %td{ colspan: '20' }
+              表示する#{User.model_name.human}はありません
