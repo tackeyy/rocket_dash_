@@ -1,0 +1,8 @@
+= simple_form_for([:admin, user]) do |f|
+  .form-inputs
+    = f.input :email, as: :email, placeholder: 'example@example.com'
+    = f.input :password
+    = f.input :password_confirmation
+
+  .form-actions
+    = f.submit '保存', class: %i[btn btn-primary]

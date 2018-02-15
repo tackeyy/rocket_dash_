@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resource :sign_in, controller: 'sign_in', only: %i[show create]
 
     resources :admins
+    resources :users
   end
 
   resource :users, only: [] do
