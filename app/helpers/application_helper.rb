@@ -12,8 +12,11 @@ module ApplicationHelper
   end
 
   def active_class(*paths)
-    return if paths.blank?
-    paths.include?(request.path) ? 'active' : ''
+    return '' if paths.none? do |path|
+      controller_path == Rails.application.routes.recognize_path(path)[:controller]
+    end
+
+    'active'
   end
 
   def human(klass, attribute)
