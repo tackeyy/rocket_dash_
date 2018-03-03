@@ -36,6 +36,9 @@ Style/AsciiComments:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Style/BracesAroundHashParameters:
+  Enabled: false
+
 Metrics/MethodLength:
   Max: 20
 
