@@ -30,3 +30,8 @@ $ bin/setup
 ```bash
 $ bundle exec rake db:seed_fu
 ```
+
+## Memo
+
+` $ find config/ -name '*.*' | xargs sed -i "" 's/rocket_dash/project_name/g' `
+` $ find config/ -name '*.*' | xargs sed -i "" 's/RocketDash/project_name/g' `
