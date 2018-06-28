@@ -1,6 +1,0 @@
-%h1 #{@user.email} 様
-
-%p #{Settings.service.name}にご登録いただき、ありがとうございます。<br>以下のボタンをクリックして#{User.human_attribute_name(:password)}登録を完了させてください。
-
-.text-center
-  = link_to "#{User.human_attribute_name(:email)}を確認する", @url, class: %w[btn btn-success], target: '_blank'

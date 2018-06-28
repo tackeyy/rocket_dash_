@@ -13,14 +13,14 @@
       .header.clearfix
         %nav
           %ul.nav.nav-pills.pull-right
-            - if logged_in?
+            - if false
               %li
-                = link_to 'Sign out', users_sign_out_path(@current_user), method: :delete, class: %w[text-danger]
+                = link_to 'Sign out', root_path, method: :delete, class: %w[text-danger]
             - else
               %li
-                = link_to 'Sign up', users_sign_up_path, class: %w[btn btn-success]
+                = link_to 'Sign up', root_path, class: %w[btn btn-success]
               %li
-                = link_to 'Sign in', users_sign_in_path, class: %w[btn btn-primary]
+                = link_to 'Sign in', root_path, class: %w[btn btn-primary]
         %h3.text-muted
           = link_to RocketDash, root_path
       = yield

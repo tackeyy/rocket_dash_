@@ -64,9 +64,6 @@ gem 'kaminari'
 # Breadcrumbs
 gem 'gretel'
 
-# Authentication
-gem 'sorcery'
-
 # Configuration
 gem 'config'
 
