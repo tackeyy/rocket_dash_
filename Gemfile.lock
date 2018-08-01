@@ -268,7 +268,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mysql2 (0.4.10)
+    mysql2 (0.5.2)
     nenv (0.3.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -487,7 +487,7 @@ DEPENDENCIES
   letter_opener_web
   listen (~> 3.1.5)
   meta-tags
-  mysql2 (>= 0.3.18, < 0.5)
+  mysql2 (>= 0.3.18, < 0.6)
   overcommit
   paranoia
   paranoia_uniqueness_validator
