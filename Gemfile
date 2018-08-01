@@ -7,7 +7,7 @@ end
 
 gem 'rails', '~> 5.2.0'
 
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'mysql2', '>= 0.3.18', '< 0.6'
 
 # Application server
 gem 'puma', '~> 3.11'
